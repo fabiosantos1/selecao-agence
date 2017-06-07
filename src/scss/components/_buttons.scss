@@ -1,0 +1,20 @@
+.btn-red {
+    padding: 1em 1.1em;
+    box-shadow: 0 0 13px rgba(0,0,0,0.8);
+    background-image: linear-gradient(#e3341f, #cd1e09);
+    font-family: 'OpenSans-Semibold';
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 130px;
+    transition: all 0.5s ease-in-out;
+    font-size: 1em;
+
+    img {
+        padding-right: 1.2em;
+    }
+
+    &:hover {
+        color: #fff;
+        background-image: linear-gradient( #cd1e09, #e3341f);
+    }
+}

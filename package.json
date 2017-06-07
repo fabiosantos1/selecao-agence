@@ -1,0 +1,44 @@
+{
+  "name": "selecao-agence",
+  "version": "1.0.0",
+  "description": "Projeto de teste de seleção para a Agence",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.2",
+    "imports-loader": "^0.7.1",
+    "jquery": "^3.2.1",
+    "jquery-mask-plugin": "^1.14.11",
+    "node-sass": "^4.5.3",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-loader": "^2.0.5",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.5",
+    "skrollr": "^0.6.26",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --hot --history-api-fallback",
+    "release": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosantos1/selecao-agence.git"
+  },
+  "keywords": [
+    "selecao",
+    "agence"
+  ],
+  "author": "Fabio Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiosantos1/selecao-agence/issues"
+  },
+  "homepage": "https://github.com/fabiosantos1/selecao-agence#readme"
+}

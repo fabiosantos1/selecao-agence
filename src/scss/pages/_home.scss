@@ -1,0 +1,170 @@
+.advertising {
+    padding-top: 1em;
+
+    p {
+        line-height: 1.5em;
+    }
+
+    .car {
+        position: relative;
+        height: 170px;
+        margin-bottom: 2.2em;
+
+        @include breakpoint('big') {
+            height: 263px;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    ul {
+        width: 255px;
+        height: 193px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 2em;
+
+        @include breakpoint('big') {
+            margin-top: 5em;
+            float: right;
+        }
+
+        li {
+            list-style-type: none;
+            position: absolute;
+            transform: scale(0);
+
+            &:nth-child(1) {
+                top: 0;
+                right: 0;
+                animation: scale 0.5s 0.5s forwards;
+            }
+
+            &:nth-child(2) {
+                top: 78px;
+                left: 10px;
+                animation: scale 0.5s 0.6s forwards;
+            }
+
+            &:nth-child(3) {
+                top: 80px;
+                right: 21px;
+                z-index: 2;
+                animation: scale 0.5s 0.7s forwards;
+            }
+
+            &:nth-child(4) {
+                top: 112px;
+                right: -9px;
+                animation: scale 0.5s 0.8s forwards;
+            }
+
+            &:nth-child(5) {
+                top: 157px;
+                left: -2px;
+                animation: scale 0.5s 0.9s forwards;
+            }
+        }
+    }
+}
+
+.rule {
+    margin-top: 3.2em;
+}
+
+.contact {
+    padding: 5.6em 0 3.57em 0;
+
+    .rule-list {
+        background-color: #a30e04;
+        font-size: 1.28em;
+        padding: 1em;
+
+        @include breakpoint('big') { 
+            padding: 2.2em 1.5em;
+            margin-right: 2em;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: .2em;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 2em;
+        }
+
+        h1,h2 {
+            font-size: 1.28em;
+        }
+        
+        p {
+            @include breakpoint('big') {
+                font-size: 0.6em;    
+            }
+            
+            font-size: 0.8em;
+            margin-bottom: 1em;
+        }
+    }
+
+    .form {
+
+        padding-top: 5.6em;
+
+        @include breakpoint('big'){
+			padding-top: 0;
+		}
+
+        header {
+            h1 {
+                text-transform: uppercase;
+                margin-bottom: 1em;
+                font-size: 1.71em;
+
+                @include breakpoint('big') {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        form {
+
+            input, textarea, select {
+                box-shadow: 0 0 13px rgba(0,0,0,0.8);
+                font-size: 1em;
+
+                @include placeholder {
+                    color: $text-placeholder;
+                }
+            }
+
+            .select-custom {
+                padding: .5rem .75rem;
+            }
+
+            select {
+                &[disabled], &:disabled{
+                    color: $text-placeholder;
+                }
+
+                &:invalid {
+                    color: $text-placeholder;
+                }
+            }
+
+            textarea {
+                height: 165px;
+            }
+
+            button {
+                margin-top: 2.5em;
+            }
+        }
+    }
+}
